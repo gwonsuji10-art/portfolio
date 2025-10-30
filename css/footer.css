@@ -1,0 +1,87 @@
+/* 푸터 전체 컨테이너 */
+.main-footer {
+    /* 상품 목록과 동일하게 너비를 제한하고 중앙 정렬 */
+    max-width: 900px;
+    margin: 50px auto 0 auto;
+    padding: 90px 10px; /* 푸터 내부의 상하좌우 여백 */
+    display: flex; /* Flexbox를 사용하여 좌우 정렬 */
+    justify-content: space-between; /* 텍스트와 아이콘을 양쪽 끝으로 밀어냅니다. */
+    align-items: flex-start; /* 세로 정렬 상단 맞춤 */
+}
+
+/* 왼쪽 텍스트 정보 영역 */
+.footer-info {
+    flex-basis: 70%; /* 전체 공간의 약 70% 사용 */
+    text-align: left;
+    color: #666;
+    font-size: 12px; /* 작은 글자 크기 */
+    font-weight: 400px;
+    line-height: 1.6;
+    /* ✅ 왼쪽 마진(여백)을 음수 값으로 설정하여 왼쪽으로 밀어냅니다. */
+    margin-left: -150px; /* 원하는 만큼 음수 값을 조정하세요 (예: -20px) */
+}
+
+.footer-info p {
+    margin: 3px 0; /* 단락 간 세로 간격 조정 */
+}
+
+/* 상단 링크 그룹 */
+.footer-links {
+    font-size: 12px;
+    font-weight: bold;
+    color: #191919;
+    margin-bottom: 15px;
+}
+
+/* 상단 링크 그룹에 포함된 앵커 태그 (a) 스타일 수정 */
+.footer-links a {
+    /* 오른쪽 여백을 추가하여 링크들 사이에 간격을 만듭니다. */
+    margin-right: 30px; 
+    
+    /* 마지막 링크에는 여백이 필요 없으므로 제거 */
+    /* .footer-links a:last-child { margin-right: 0; } */ 
+}
+
+
+.footer-links a, .footer-address a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 오른쪽 소셜 미디어 아이콘 영역 */
+.footer-social {
+    flex-basis: 30%; /* 전체 공간의 약 30% 사용 */
+    text-align: right;
+    /* ✅ 오른쪽으로 밀어내기 위해 음수 마진 적용 */
+    margin-right: -100px; /* 왼쪽 텍스트와 대칭을 이루도록 -20px 사용 */
+}
+
+/* 소셜 아이콘 링크 스타일 */
+.footer-social a {
+    color: #000; /* 아이콘 색상 검정 */
+    text-decoration: none;
+    font-size: 18px; /* 아이콘 크기 */
+    margin-left: 15px; /* 아이콘 간 가로 간격 */
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #999; /* 호버 시 색상 변경 */
+}
+
+/* 푸터 주소/저작권 정보 스타일 */
+.footer-address {
+    /* 1. 줄 바꿈을 강제로 막음 */
+    white-space: nowrap; 
+    
+    /* 2. 컨테이너를 벗어나는 내용은 숨김 */
+    overflow: hidden; 
+    
+    /* 3. 숨겨진 텍스트가 있다면 말줄임표(...)로 표시 */
+    text-overflow: ellipsis; 
+
+    /* ... 기존 스타일 유지 ... */
+    font-size: 12px; 
+    color: #666;
+    margin: 3px 0;
+}

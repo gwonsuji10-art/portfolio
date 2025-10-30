@@ -1,0 +1,221 @@
+section.best-seller-section {
+    background-color: #111;
+    /* 전체 배경 검정 */
+    color: #fff;
+    /* 기본 글자색 흰색 */
+    padding: 50px 0px;
+    /* 위아래 여백 */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.best-seller-content {
+    max-width: 800px;
+    /* 텍스트 박스 너비 제한 */
+}
+
+.best-seller-content h2 {
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.best-seller-section .best-seller-content .quote {
+    font-size: 14px; /* 명시도 향상 (클래스 3개) */
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: 1.5px;
+}
+
+/* 수정된 CSS: 명시도를 높여 확실히 적용되도록 합니다. */
+.best-seller-section .best-seller-content p { 
+    font-size: 13px; 
+    font-weight: 300px;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+    margin: 8px 0;
+    color: #ccc;
+}
+
+
+.nav ul li:nth-child(4) a {
+    color: #e60023;
+}
+
+
+
+
+
+
+
+/* 정렬 필터 컨테이너 스타일 */
+.filter-bar-container {
+    /* max-width: 800px; /* 이 줄을 제거하거나 주석 처리합니다. */
+    width: 100%; /* 전체 너비를 사용합니다. */
+    margin: 10px 0; /* 위아래 여백은 유지, 좌우 여백을 0으로 설정 */
+    padding: 100px 10px;
+    display: flex;
+    justify-content: flex-end; /* 필터 박스를 오른쪽 끝으로 정렬 */
+}
+
+/* 필터 박스 자체에 오른쪽 여백을 추가하여 오른쪽 벽에서 밀어냅니다. */
+.filter-box {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #191919;
+    height: 30px;
+    /* 새롭게 추가/수정된 부분: 오른쪽 외부 여백을 추가합니다. */
+    margin-right: 380px; /* 원하는 만큼 값을 조정하세요 (예: 20px) */
+}
+
+/* 실제 드롭다운(select) 요소 스타일 */
+.sort-select {
+    /* 기본 브라우저 스타일 제거 및 이미지와 유사한 스타일 적용 */
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    
+    background-color: transparent;
+    color: #191919; /* 기본 글자색 (배경이 흰색이므로) */
+    border: none;
+    padding: 5px 25px 5px 10px; /* 오른쪽 패딩을 늘려 화살표 공간 확보 */
+    font-size: 14px;
+    cursor: pointer;
+    height: 100%;
+}
+
+/* 드롭다운 화살표(▼) 스타일 */
+.dropdown-arrow {
+    position: absolute;
+    top: 50%;
+    right: 8px; /* 오른쪽 경계에서 살짝 안쪽으로 */
+    transform: translateY(-50%);
+    pointer-events: none; /* 클릭 이벤트를 select로 전달 */
+    color: #191919;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 상품 목록 전체 섹션 (가로 나열을 위해 유지) */
+.product-list-section {
+    max-width: 1100px;
+    margin: 30px auto 80px auto;
+    padding: 0 10px;
+    
+    display: flex; 
+    justify-content: space-between; 
+    gap: 30px; 
+    text-align: center;
+}
+
+/* 개별 상품 카드 스타일 */
+.product-card {
+    flex: 1 1 30%; /* 가로 나열 및 너비 설정 */
+    display: flex;
+    flex-direction: column; /* 이미지와 버튼을 세로로 정렬 */
+    align-items: center; /* 가운데 정렬 */
+    /* 이미지로 인해 텍스트 높이 맞춤(min-height)은 필요 없습니다. */
+}
+
+/* 통합된 상품 정보 이미지 컨테이너 */
+.product-image-full {
+    width: 100%; /* 카드 너비에 맞춥니다. */
+    margin-bottom: 20px; /* 버튼과 이미지 사이의 간격 */
+}
+
+/* 이미지 스타일 */
+.product-image-full img {
+    width: 100%; 
+    height: auto;
+    /* 추가 마진은 .product-image-full에 설정했으므로 제거 */
+}
+
+/* 장바구니 버튼 스타일 */
+.add-to-cart-btn {
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 25px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    width: auto; 
+    margin-top: 5px; /* 버튼 상단 여백 (이미지 아래 간격 조정) */
+
+    /* ✅ 추가: 부드러운 전환 효과를 위해 transition 추가 */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* 🖱️ 호버 효과 스타일 추가 */
+.add-to-cart-btn:hover {
+    /* 배경색과 글자색 반전 */
+    background-color: #000;
+    color: #fff;
+    
+    /* 필요하다면 마우스를 올렸을 때 테두리 색상도 변경할 수 있습니다. */
+    /* border-color: #333; */ 
+}
+
+
+
+
+/* 페이지네이션 컨테이너 (중앙 정렬) */
+.pagination-container {
+    text-align: center; /* 내부 요소를 중앙 정렬 */
+    margin: 40px 0 60px 0; /* 위아래 여백 추가 */
+    padding-top: 30px;
+}
+
+/* 페이지네이션 그룹 */
+.pagination {
+    display: inline-block;
+    /* 이미지 폰트와 유사하게 보이기 위해 Playfair Display 사용 가능 */
+    font-family: 'Noto Sans', serif; 
+    font-size: 16px; 
+}
+
+/* 모든 페이지 링크 기본 스타일 */
+.page-link {
+    color: #333; /* 글자색 */
+    text-decoration: none; /* 밑줄 제거 */
+    padding: 0 5px; /* 번호 사이의 간격 */
+    margin: 0 2px;
+    
+    /* 폰트 스타일을 이미지와 유사하게 설정 */
+    font-weight: 500;
+}
+
+/* 현재 페이지 번호 스타일 (활성화된 번호) */
+.page-link.current {
+    font-weight: 900; /* 현재 페이지는 굵게 표시 */
+    color: #191919;
+}
+
+/* «, », <, > 버튼 스타일 */
+.page-end, .page-nav {
+    font-weight: bold;
+}
+
+/* 호버 효과 (마우스 오버 시) */
+.page-link:hover:not(.current) {
+    color: #999; /* 마우스 올렸을 때 색상 변경 */
+}
+
+
+

@@ -1,0 +1,138 @@
+/* 기본 설정 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Playfair Display';
+    color: #111;
+}
+
+
+/* 헤더 전체 */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+/* 상단 영역 */
+.header-top {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+/* 왼쪽 검색 영역 */
+.left {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    font-size: 14px;
+    color: #444;
+}
+
+/* 검색 아이콘 hover 효과 */
+.left i {
+    font-size: 16px;
+    margin-right: 8px;
+    color: #444;
+    transition: color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.left i:hover {
+    color: #000;
+    /* 색상 진하게 */
+    transform: scale(1.2);
+    /* 살짝 확대 */
+}
+
+
+/* 중앙 로고 */
+.center .logo {
+    width: 300px;
+    height: 100px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(80px);
+    /* ✅ 로고만 살짝 아래로 내리기 */
+    cursor: pointer;
+}
+
+.center .logo:hover {
+    transform: translateY(80px) scale(1.08);
+    opacity: 0.9;
+    /* 살짝 투명하게 해서 입체감 */
+}
+
+
+/* 오른쪽 아이콘 */
+.right i {
+    font-size: 18px;
+    margin-left: 16px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    color: #111;
+    
+}
+
+.right i:hover {
+    color: #000;
+    /* 색상 진하게 */
+    transform: scale(1.2);
+    /* 살짝 확대 */
+}
+
+
+
+
+
+
+/* 하단 네비게이션 */
+.nav {
+    margin-top: 150px;
+}
+
+.nav ul {
+    display: flex;
+    gap: 90px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li a {
+    position: relative;
+    color: #191919;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+
+/* hover 효과 */
+.nav ul li a:hover {
+    color: #e60023;
+}
+
+.nav ul li a:hover::after {
+    width: 100%;
+}

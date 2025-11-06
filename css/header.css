@@ -40,11 +40,12 @@ body {
     padding: 0 40px;
 }
 
+
 /* 왼쪽 검색 영역 */
 .left {
     display: flex;
-    margin-bottom: 50px;
     align-items: center;
+    margin-bottom: 50px;
     font-size: 14px;
     color: #444;
 }
@@ -59,14 +60,36 @@ body {
 }
 
 .left i:hover {
-    color: #000;
-    /* 색상 진하게 */
-    transform: scale(1.2);
-    /* 살짝 확대 */
+    color: #000; /* 색상 진하게 */
+    transform: scale(1.2); /* 살짝 확대 */
+}
+
+/* 🔹 실제 입력창 */
+.left input {
+    border: none;             /* 테두리 제거 */
+    outline: none;            /* 클릭 시 파란 테두리 제거 */
+    font-size: 14px;
+    width: 180px;             /* 입력 가능한 너비 */
+    background-color: transparent; /* 배경 투명하게 */
+    color: #111;              /* 입력 글자색 */
 }
 
 
+
+
+
+
 /* 중앙 로고 */
+
+
+.center {
+    position: absolute;
+    top: 8%; /* ← 중앙보다 조금 위로 올림 (조정 가능) */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 .center .logo {
     width: 300px;
     height: 100px;
@@ -77,9 +100,8 @@ body {
 }
 
 .center .logo:hover {
-    transform: translateY(80px) scale(1.08);
+    filter: brightness(0.7) grayscale(100%); /* 어두워지고 흑백 느낌 */
     opacity: 0.9;
-    /* 살짝 투명하게 해서 입체감 */
 }
 
 

@@ -20,8 +20,9 @@
         <div class="header-top">
             <div class="left">
                 <i class="fas fa-magnifying-glass"></i>
-                <span>무엇을 찾고 계십니까?</span>
+                <input type="text" placeholder="무엇을 찾고 계십니까?" />
             </div>
+            
             <div class="center">
                 <a href="index.html">
                     <img src="img/logo.png" alt="MAC 로고" class="logo">
@@ -78,7 +79,7 @@
 
     <section class="product-section">
         <div class="product-card">
-            <img src="img/bg1.png" alt="슬릭 새틴">
+            <img src="img/bg1.png" alt="맥시멀 슬릭 새틴 립스틱">
             <h3>맥시멀 슬릭 새틴 립스틱</h3>
             <p class="eng">M·A·CXIMAL SLEEK SATIN LIPSTICK</p>
             <p class="price">₩ 39,000</p>
@@ -100,7 +101,7 @@
         </div>
 
         <div class="product-card">
-            <img src="img/bg2.png" alt="락드 브로우">
+            <img src="img/bg2.png" alt="프로 락드 브로우 젤">
             <h3>프로 락드 브로우 젤</h3>
             <p class="eng">Pro Locked Brow Gel</p>
             <p class="price">₩ 36,000</p>
@@ -116,7 +117,7 @@
         </div>
 
         <div class="product-card">
-            <img src="img/bg3.png" alt="대즐">
+            <img src="img/bg3.png" alt="대즐섀도우">
             <h3>대즐섀도우</h3>
             <p class="eng">Dazzleshadow</p>
             <p class="price">₩ 45,000</p>
@@ -134,7 +135,7 @@
 
 
         <div class="product-card">
-            <img src="img/bg4.png" alt="라이트풀">
+            <img src="img/bg4.png" alt="맥시멀 슬릭 새틴 립스틱">
             <h3>글로우 플레이 라이트풀 C3 톤-업 프라이머</h3>
             <p class="eng">Glow Play Lightful C3 Tone-Up Primer</p>
             <p class="price">₩ 63,000</p>
@@ -151,7 +152,7 @@
         </div>
 
         <div class="product-card">
-            <img src="img/bg5.png" alt="실키 매트">
+            <img src="img/bg5.png" alt="프로 락드 브로우 젤">
             <h3>맥시멀 실키 매트 립스틱</h3>
             <p class="eng">M·A·CXIMAL SILKY MATTE LIPSTICK</p>
             <p class="price">₩ 39,000</p>
@@ -173,7 +174,7 @@
         </div>
 
         <div class="product-card">
-            <img src="img/bg6.png" alt="아이섀도우">
+            <img src="img/bg6.png" alt="대즐섀도우">
             <h3>아이섀도우</h3>
             <p class="eng">EYE SHADOW</p>
             <p class="price">₩ 36,000</p>
@@ -194,7 +195,7 @@
 
 
         <div class="product-card">
-            <img src="img/bg7.png" alt="래디언스 세럼">
+            <img src="img/bg7.png" alt="맥시멀 슬릭 새틴 립스틱">
             <h3>스튜디오 래디언스 세럼-파워 파운데이션</h3>
             <p class="eng">Studio Radiance Serum-Powered™ Foundation</p>
             <p class="price">₩ 79,000</p>
@@ -214,7 +215,7 @@
         </div>
 
         <div class="product-card">
-            <img src="img/bg8.png" alt="텐더토크">
+            <img src="img/bg8.png" alt="프로 락드 브로우 젤">
             <h3>글로우 플레이 텐더토크 립 밤</h3>
             <p class="eng">GLOW PLAY TENDERTALK LIPBALM</p>
             <p class="price">₩ 38,000</p>
@@ -233,7 +234,7 @@
         </div>
 
         <div class="product-card">
-            <img src="img/bg9.png" alt="슈가 크리스탈">
+            <img src="img/bg9.png" alt="대즐섀도우">
             <h3>맥 슈가 크리스탈 립 오일 스틱 3g</h3>
             <p class="eng">MAC Sugar Crystal Lip Oil Stick 3g</p>
             <p class="price">₩ 38,000</p>
@@ -253,32 +254,28 @@
 
 
 
+<div class="pagination-container">
+    <div class="pagination">
+        <a href="#" class="page-link page-end">&lt;&lt;</a>
+        <a href="#" class="page-link page-nav">&lt;</a>
 
+        <a href="#" class="page-link current" data-page="1">1</a>
+        <a href="#" class="page-link" data-page="2">2</a>
+        <a href="#" class="page-link" data-page="3">3</a>
 
-
-
-
-
-
-
-
-
-
-    <div class="pagination-container">
-        <div class="pagination">
-            <a href="#" class="page-link page-end">
-                <<</a>
-                    <a href="#" class="page-link page-nav">
-                        <</a>
-
-                            <a href="#" class="page-link current">1</a>
-                            <a href="#" class="page-link">2</a>
-                            <a href="#" class="page-link">3</a>
-
-                            <a href="#" class="page-link page-nav">></a>
-                            <a href="#" class="page-link page-end">>></a>
-        </div>
+        <a href="#" class="page-link page-nav">&gt;</a>
+        <a href="#" class="page-link page-end">&gt;&gt;</a>
     </div>
+</div>
+
+<!-- ✅ 모달창 -->
+<div class="modal-overlay" id="modal">
+    <div class="modal-box">
+        <p>상품이 없습니다.</p>
+        <button id="closeModal">닫기</button>
+    </div>
+</div>
+
 
 
 
@@ -302,6 +299,8 @@
             <a href="#" aria-label="유튜브"><i class="fab fa-youtube"></i></a>
         </div>
     </footer>
+
+<script src="js/page.js"></script>
 
 </body>
 

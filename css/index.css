@@ -175,7 +175,11 @@
     /* 원하는 여백 크기로 조정하세요 (예: 15px) */
     box-sizing: border-box;
     border: 1px solid #000;
+<<<<<<< HEAD
     cursor: default; /* 기본 화살표 커서 유지 */
+=======
+    cursor: pointer;
+>>>>>>> 8b37a15f559c775673ce037edfa44a4ea56e30e3
 }
 
 /* 상품 이미지 컨테이너 */

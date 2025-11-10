@@ -1,0 +1,316 @@
+section.best-seller-section {
+    background-color: #111;
+    /* 전체 배경 검정 */
+    color: #fff;
+    /* 기본 글자색 흰색 */
+    padding: 50px 0px;
+    /* 위아래 여백 */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.best-seller-content {
+    max-width: 800px;
+    /* 텍스트 박스 너비 제한 */
+}
+
+.best-seller-content h2 {
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.best-seller-section .best-seller-content .quote {
+    font-size: 14px; /* 명시도 향상 (클래스 3개) */
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: 1.5px;
+}
+
+/* 수정된 CSS: 명시도를 높여 확실히 적용되도록 합니다. */
+.best-seller-section .best-seller-content p { 
+    font-size: 13px; 
+    font-weight: 300px;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+    margin: 8px 0;
+    color: #ccc;
+}
+
+
+.nav ul li:nth-child(3) a {
+    color: #e60023;
+}
+
+
+
+
+
+
+
+/* 정렬 필터 컨테이너 스타일 */
+.filter-bar-container {
+    /* max-width: 800px; /* 이 줄을 제거하거나 주석 처리합니다. */
+    width: 100%;
+    /* 전체 너비를 사용합니다. */
+    margin: 10px 0;
+    /* 위아래 여백은 유지, 좌우 여백을 0으로 설정 */
+    padding: 100px 10px;
+    display: flex;
+    justify-content: flex-end;
+    /* 필터 박스를 오른쪽 끝으로 정렬 */
+}
+
+/* 필터 박스 자체에 오른쪽 여백을 추가하여 오른쪽 벽에서 밀어냅니다. */
+.filter-box {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #191919;
+    height: 30px;
+    /* 새롭게 추가/수정된 부분: 오른쪽 외부 여백을 추가합니다. */
+    margin-right: 320px;
+    /* 원하는 만큼 값을 조정하세요 (예: 20px) */
+}
+
+/* 실제 드롭다운(select) 요소 스타일 */
+.sort-select {
+    /* 기본 브라우저 스타일 제거 및 이미지와 유사한 스타일 적용 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background-color: transparent;
+    color: #191919;
+    /* 기본 글자색 (배경이 흰색이므로) */
+    border: none;
+    padding: 5px 25px 5px 10px;
+    /* 오른쪽 패딩을 늘려 화살표 공간 확보 */
+    font-size: 14px;
+    cursor: pointer;
+    height: 100%;
+}
+
+/* 드롭다운 화살표(▼) 스타일 */
+.dropdown-arrow {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    /* 오른쪽 경계에서 살짝 안쪽으로 */
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* 클릭 이벤트를 select로 전달 */
+    color: #191919;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+/* 수정 */
+
+
+.product-section {
+    display: flex;
+    justify-content: center; /* 가로 중앙 */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin: 50px auto 0;
+    text-align: center;
+    max-width: 1250px;
+    width: 100%;
+}
+
+
+.product-card {
+    width: 350px;
+    /* 카드 폭 살짝 줄이기 (간격 확보용) */
+    margin: 0;
+    /* 여백 제거 */
+}
+
+.product-card img {
+    width: 350px;
+    /* 이미지 크기 줄여서 간격 시각적으로도 여유 있게 */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.product-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #111;
+}
+
+.product-card .eng {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.product-card .desc {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.color-options {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.color-options span {
+    width: 16px;
+    height: 16px;
+    border-radius: 0;
+    border: 1px solid #ccc;
+}
+
+.cart-btn {
+    border: 1px solid #111;
+    background: #fff;
+    margin-top: 10px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cart-btn:hover {
+    background: #111;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* 페이지네이션 스타일 */
+
+
+/* 페이지네이션 컨테이너 (중앙 정렬) */
+.pagination-container {
+    text-align: center; /* 내부 요소를 중앙 정렬 */
+    margin: 100px 0 60px 0; /* 위아래 여백 추가 */
+    padding-top: 30px;
+}
+
+/* 페이지네이션 그룹 */
+.pagination {
+    display: inline-block;
+    /* 이미지 폰트와 유사하게 보이기 위해 Playfair Display 사용 가능 */
+    font-family: 'Noto Sans', serif; 
+    font-size: 16px; 
+}
+
+/* 모든 페이지 링크 기본 스타일 */
+.page-link {
+    color: #333; /* 글자색 */
+    text-decoration: none; /* 밑줄 제거 */
+    padding: 0 5px; /* 번호 사이의 간격 */
+    margin: 0 2px;
+    
+    /* 폰트 스타일을 이미지와 유사하게 설정 */
+    font-weight: 500;
+}
+
+/* 현재 페이지 번호 스타일 (활성화된 번호) */
+.page-link.current {
+    font-weight: 900; /* 현재 페이지는 굵게 표시 */
+    color: #191919;
+}
+
+/* «, », <, > 버튼 스타일 */
+.page-end, .page-nav {
+    font-weight: bold;
+}
+.page-link:hover {
+    color: #e60023;
+    transform: scale(1.1);
+}
+
+
+
+
+/* ✅ 모달창 스타일 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none; /* 처음엔 숨김 */
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-box {
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: popUp 0.3s ease;
+}
+
+.modal-box p {
+    font-size: 16px;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.modal-box button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-box button:hover {
+    background: #e60023;
+}
+
+/* ✅ 애니메이션 */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popUp {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+
+
